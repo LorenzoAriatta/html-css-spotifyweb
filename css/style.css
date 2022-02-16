@@ -443,3 +443,7 @@ footer {
         width: 20%;
     }
 }
+
+@media screen and (max-width: 480px) {
+
+}
