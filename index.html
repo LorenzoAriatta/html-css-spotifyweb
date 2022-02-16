@@ -9,225 +9,290 @@
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
-    <title>My Spotify</title>
+    <title>MySpotify</title>
 </head>
 
-<body>
 
+
+<body>
 
     <main>
 
         <div class="side-nav">
 
-            <div class="side-top">
+            <div class="container-nav w-90 flex-col">
 
-                <div class="logo">
-                    <img src="img/logo.svg" alt="logo">
-                </div>
+                <div class="side-top-part flex-col">
 
-                <div class="side-function">
-
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Cerca</a></li>
-                        <li><a href="#">La tua libreria</a></li>
-                    </ul>
-
-                </div>
-
-                <div class="side-playlist">
-
-                    <h2 id="titoli-covers">PLAYLIST</h2>
-
-                    <div class="add-playlist">
-                        <a><i class="fas fa-plus"></i></a>
-                        <p>Crea Playlist</p>
+                    <div class="logo w-100">
+                        <img src="img/logo.svg" alt="logospotify">
                     </div>
 
-                    <div class="lista-nomi">
+                    <div class="side-top w-100">
 
                         <ul>
-                            <li><a href="#">Nome Playlist</a></li>
-                            <li><a href="#">Nome Playlist</a></li>
-                            <li><a href="#">Nome Playlist</a></li>
-                            <li><a href="#">Nome Playlist</a></li>
-                            <li><a href="#">Nome Playlist</a></li>
-                            <li><a href="#">Nome Playlist</a></li>
-                            <li><a href="#">Nome Playlist</a></li>
+
+                            <li><a href="#"><img class="icon w-10" src="img/home.svg" alt="home"> Home</a></li>
+                            <li><a href="#"><img class="icon w-10" src="img/search.svg" alt="home"> Cerca</a></li>
+                            <li><a href="#"><img class="icon w-10" src="img/libreria.svg" alt="home"> La tua
+                                    Libreria</a>
+                            </li>
+
                         </ul>
 
                     </div>
 
+                    <div class="side-playlist w-100">
+
+                        <h2 id="titoli">PLAYLIST</h2>
+
+                        <div class="add-playlist">
+                            <a href="#"><i class="fas fa-plus"></i></a>
+                            <p>Crea Playlist</p>
+                        </div>
+
+                        <div class="name-playlist">
+
+                            <ul>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
-            </div>
+                <div class="side-bot w-100">
 
-            <div class="side-user">
+                    <div class="app-down">
 
-                <div class="download">
+                        <a href="#"><img id="download" src="img/download.svg" alt="profile"> Installa app
+                        </a>
 
-                    <a href="#"><img id="download" src="img/download.svg" alt="profile">
-                    </a>
-                    <p>Installa app</p>
+                    </div>
 
-                </div>
+                    <div class="user">
 
-                <div class="user">
+                        <a href="#"><img id="profile" src="img/profile.svg" alt="profile"> LoreTk</a>
 
-                    <a href="#"><img id="profile" src="img/profile.svg" alt="profile"></a>
-                    <h2>Jhon Doe</h2>
+                    </div>
 
                 </div>
 
             </div>
 
         </div>
-        <!-- / side nav -->
 
-        <!-- inzio parte content -->
-        <div class="content">
+        <header class="flex">
 
-            <div class="alert-upgrade">
+            <div class="button-upgrade">
 
-                <div class="button-upgrade">
+                <a href="#">EFFETTUA L'UPGRADE</a>
 
-                    <a href="#">EFFETTUA L'UPGRADE</a>
+            </div>
 
+        </header>
+
+        <div class="content flex-col">
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">IN EVIDENZA</a></li>
+                    <li><a href="#">PODCAST</a></li>
+                    <li><a href="#">CLASSIFICHE</a></li>
+                    <li><a href="#">GENERI E MOOD</a></li>
+                    <li><a href="#">NUOVE USCITE</a></li>
+                    <li><a href="#">SCOPRI</a></li>
+                </ul>
+            </div>
+
+            <div id="titolo-content">
+                <h1>Recently Played</h1>
+            </div>
+
+            <div class="row flex wrap">
+
+                <div id="covers">
+                    <img class="w-100" src="img/metal_lifting.jpg" alt="Metallica">
+                    <h2 id="titoli-covers">Heavy Metal</h2>
+                    <p id="sub-covers">Subtitle</p>
+                </div>
+
+                <div id="covers">
+                    <img class="w-100" src="img/stranger.jpeg" alt="strangers things">
+                    <h2 id="titoli-covers">Stranger Things, Vol.1 (a Netflix Original Seies Soundtrack)</h2>
+                    <p id="sub-covers">Kyle Dixon & Michael Stein</p>
+                </div>
+
+                <div id="covers">
+                    <img class="w-100" src="img/aquietplace.jpeg" alt="aquietplace">
+                    <h2 id="titoli-covers">A quiet place</h2>
+                    <p id="sub-covers">Subtitle</p>
+                </div>
+
+                <div id="covers">
+                    <img class="w-100" src="img/split.jpeg" alt="split">
+                    <h2 id="titoli-covers">Split</h2>
+                    <p id="sub-covers">Subtitle</p>
+                </div>
+
+                <div id="covers">
+                    <img class="w-100" src="img/cure.jpeg" alt="cureforwellness">
+                    <h2 id="titoli-covers">A cure for wellness</h2>
+                    <p id="sub-covers">Subtitle</p>
+                </div>
+
+                <div id="covers">
+                    <img class="w-100" src="img/sinister.jpeg" alt="sinister">
+                    <h2 id="titoli-covers">Sinister</h2>
+                    <p id="sub-covers">Subtitle</p>
                 </div>
 
             </div>
 
-            <!-- parte contenuti -->
-            <div class="showcase">
+            <div id="titolo-content">
+                <h1>Creato per Jhon Doe</h1>
+                <p>Più ascolti, più accurati saranno i suggerimenti</p>
+            </div>
 
-                <div class="menu">
-                    <ul>
-                        <li><a href="#">IN EVIDENZA</a></li>
-                        <li><a href="#">PODCAST</a></li>
-                        <li><a href="#">CLASSIFICHE</a></li>
-                        <li><a href="#">GENERI E MOOD</a></li>
-                        <li><a href="#">NUOVE USCITE</a></li>
-                        <li><a href="#">SCOPRI</a></li>
-                    </ul>
+            <div class="small-row flex wrap">
+
+                <div id="covers">
+                    <img class="w-100" src="img/radar.jpeg" alt="radar">
+                    <h2 id="titoli-covers">Release Radar</h2>
                 </div>
 
-                <!--inizio prima row-->
-                <div id="titolo-content">
-                    <h1>Recently Played</h1>
-                </div>
-
-
-                <div id="recently-played">
-
-                    <div class="covers">
-
-                        <img src="img/metal_lifting.jpg" alt="metallica">
-                        <h2 id="titoli-covers">Heavy Metal</h2>
-                        <p id="sub-covers">Subtitle</p>
-
-                    </div>
-
-                    <div class="covers">
-
-                        <img src="img/stranger.jpeg" alt="strangers things">
-                        <h2 id="titoli-covers">Stranger Things, Vol.1 (a Netflix Original Seies Soundtrack)</h2>
-                        <p id="sub-covers">Kyle Dixon & Michael Stein</p>
-
-                    </div>
-
-                    <div class="covers">
-
-                        <img src="img/aquietplace.jpeg" alt="aquietplace">
-                        <h2 id="titoli-covers">A quiet place</h2>
-                        <p id="sub-covers">Subtitle</p>
-
-                    </div>
-
-                    <div class="covers">
-
-                        <img src="img/split.jpeg" alt="split">
-                        <h2 id="titoli-covers">Split</h2>
-                        <p id="sub-covers">Subtitle</p>
-
-                    </div>
-
-                    <div class="covers">
-
-                        <img src="img/cure.jpeg" alt="cureforwellness">
-                        <h2 id="titoli-covers">A cure for wellness</h2>
-                        <p id="sub-covers">Subtitle</p>
-
-                    </div>
-
-                    <div class="covers">
-
-                        <img src="img/sinister.jpeg" alt="sinister">
-                        <h2 id="titoli-covers">Sinister</h2>
-                        <p id="sub-covers">Subtitle</p>
-
-                    </div>
-
-                </div>
-
-                <!--inizio seconda row-->
-                <div id="titolo-content">
-                    <h1>Creato per Jhon Doe</h1>
-                    <p>Più ascolti, più accurati saranno i suggerimenti</p>
-                </div>
-
-                <div class="row">
-
-                    <div class="covers">
-
-                        <img src="img/radar.jpeg" alt="ReleaseRadar">
-                        <h2 id="titoli-covers">Release Radar</h2>
-
-                    </div>
-
-                    <div class="covers">
-
-                        <img src="img/mixdaily.jpeg" alt="DailyMix">
-                        <h2 id="titoli-covers">Daily Mix 1</h2>
-
-                    </div>
-
-
-                </div>
-
-
-                <!--inizio terza row-->
-                <div id="titolo-content">
-                    <h1>Artisti più popolari</h1>
-                    <p>Più ascolti, più accurati saranno i suggerimenti</p>
-                </div>
-
-                <div id="round-covers" class="row">
-
-                    <div class="covers">
-
-                        <img src="img/youg.jpeg" alt="LanadelRey">
-                        <h2 id="titoli-covers">Lana Del Rey</h2>
-
-                    </div>
-
-                    <div id="round-covers" class="covers">
-
-                        <img src="img/einaudi.jpeg" alt="Einaudi">
-                        <h2 id="titoli-covers">Ludovico Einaudi</h2>
-
-                    </div>
-
+                <div id="covers">
+                    <img class="w-100" src="img/mixdaily.jpeg" alt="mixdaily things">
+                    <h2 id="titoli-covers">Daily Mix 1</h2>
                 </div>
 
             </div>
 
+            <div id="titolo-content">
+                <h1>Artisti più popolari</h1>
+                <p>Più ascolti, più accurati saranno i suggerimenti</p>
+            </div>
+
+            <div id="round-covers" class="small-row flex">
+
+                <div id="covers">
+                    <img class="w-100" src="img/youg.jpeg" alt="lanadelrey">
+                    <h2 id="titoli-covers">Lana Del Rey</h2>
+                </div>
+
+                <div id="covers">
+                    <img class="w-100" src="img/einaudi.jpeg" alt="stranger einaudi things">
+                    <h2 id="titoli-covers">Ludovico Einaudi</h2>
+                </div>
+
+            </div>
+
+        </div>
 
     </main>
 
-
-    <footer></footer>
-
 </body>
 
+
+
+
+
+
+
+<footer class="flex">
+
+    <div class="footer-L w-30 flex">
+
+        <div class="album flex">
+            <img src="img/sinister.jpeg" alt="sinister">
+
+            <div class="txt-player">
+                <h4>Sinister</h4>
+                <p>Subtitle</p>
+            </div>
+
+            <div class="favorite flex">
+
+                <div class="heart flex">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="footer-M w-50 flex-col">
+
+        <div class="player flex">
+
+            <div class="random">
+                <i class="fas fa-random"></i>
+            </div>
+
+            <div class="back">
+                <i class="fas fa-step-backward"></i>
+            </div>
+
+            <div class="play">
+                <i class="far fa-play-circle"></i>
+            </div>
+
+            <div class="skip">
+                <i class="fas fa-step-forward"></i>
+            </div>
+
+            <div class="repeat">
+                <i class="fas fa-redo-alt"></i>
+            </div>
+
+        </div>
+
+        <div class="bar-player w-100 flex">
+
+            <p>0:25</p>
+            <div class="bar w-70">
+                <div class="colored-bar w-40"></div>
+            </div>
+            <p>4:35</p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-R w-30 flex">
+
+        <div class="barre">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="desktop">
+            <i class="fas fa-desktop"></i>
+        </div>
+
+        <div class="volume">
+            <i class="fas fa-volume-up"></i>
+        </div>
+
+        <div class="volume-bar w-50">
+            <div class="volume-cntr w-20"></div>
+        </div>
+
+    </div>
+
+</footer>
+
+</div>
 
 </html>
