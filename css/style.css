@@ -73,13 +73,10 @@ main {
 }
 
 
-
-
-
 /* ----- side nav ----- */
 .side-nav {
     background-color: black;
-    width: 15vw;
+    width: 200px;
     height: calc(100% - 100px);
     position: fixed;
     z-index: 1;
@@ -226,12 +223,15 @@ header {
 /* ----- content ----- */
 .content {
     padding-top: 110px;
-    padding-left: 15vw;
+    padding-left: 200px;
     padding-bottom: 150px;
 }
 
 .menu {
-    align-self: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 25px;
 }
 
 .menu li {
@@ -369,6 +369,8 @@ footer {
 
 .bar-player p {
     margin: 0 10px;
+    font-size: 12px;
+    font-weight: 700;
 }
 
 .bar {
@@ -390,7 +392,7 @@ footer {
 
 }
 .footer-R i {
-    margin: 0 10px;
+    margin: 0 1vw;
 }
 
 .volume-bar {
@@ -403,4 +405,41 @@ footer {
     height: 100%;
     background-color: white;
     border-radius: 15%;
+}
+
+
+
+
+
+/* -------------------- MEDIA QUERY -------------------- */
+@media screen and (max-width: 920px) {
+    .row {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    #covers {
+        width: calc(100% / 4 - 20px);
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .row {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    #covers {
+        width: calc(100% / 2 - 20px);
+    }
+
+    .heart {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-R {
+        width: 20%;
+    }
 }
