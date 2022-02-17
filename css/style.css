@@ -3,7 +3,6 @@
     padding: 0%;
     box-sizing: border-box;
     font-family: sans-serif;
-    overflow-x: hidden;
 }
 
 /* utility */
@@ -132,9 +131,10 @@ main {
 /* side playlist */
 .side-playlist {
     margin-top: 30px;
-    overflow: auto;
+    overflow-y: auto;
     display: block;
 }
+
 #titoli {
     color: white;
     font-size: 14px;
@@ -398,14 +398,16 @@ footer {
 }
 
 .colored-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     height: 100%;
     background-color: white;
     border-radius: 5px;
-    justify-content: flex-end;
 }
 
 .selector {
-    background-color: #0896e7;
+    background-color: lightseagreen;
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -433,6 +435,7 @@ footer {
     background-color: white;
     border-radius: 5px;
 }
+
 
 
 /* -------------------- HOVER -------------------- */
@@ -490,10 +493,9 @@ footer {
     transform: scale(1.1);
 }
 
-.selector-play:hover {
-    display: block;
+.colored-bar:hover {
+    background-color: #a5f22e;
 }
-
 
 
 /* -------------------- MEDIA QUERY -------------------- */
