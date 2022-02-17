@@ -82,6 +82,7 @@ main {
     z-index: 1;
     top: 0%;
     left: 0%;
+    display: block;
 }
 
 .container-nav {
@@ -94,6 +95,7 @@ main {
     flex-shrink: 0;
 }
 
+
 .logo img {
     width: 130px;
 }
@@ -104,6 +106,7 @@ main {
 /* side top */
 .side-top{
     flex-shrink: 0;
+    display: block;
 }
 
 .side-nav li {
@@ -130,6 +133,7 @@ main {
 .side-playlist {
     margin-top: 30px;
     overflow: auto;
+    display: block;
 }
 #titoli {
     color: white;
@@ -311,7 +315,7 @@ footer {
     align-items: center;
     color: white;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 
@@ -408,6 +412,7 @@ footer {
 }
 
 
+/* -------------------- HOVER -------------------- */
 
 
 
@@ -445,5 +450,97 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+    /* content */
+    .row {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
 
+    #covers {
+        width: calc(100% / 2 - 20px);
+    }
+
+    /* side nav */
+    .side-nav {
+        width: 50px;
+    }
+
+    .content {
+        padding-left: 50px;
+    }
+
+    .logo {
+        content: url(../img/logo-small.svg);
+        width: 25px;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    .side-top a {
+        display: none;
+    }
+
+    .side-playlist {
+        display: none;
+    }
+
+    .side-top li:nth-child(1) {
+        content: url(../img/home.svg);
+        width: 25px;
+        margin-top: 15px;
+    }
+
+    .side-top li:nth-child(2) {
+        content: url(../img/search.svg);
+        width: 25px;
+        margin-top: 5px;
+    }
+
+    .side-top li:nth-child(3) {
+        content: url(../img/libreria.svg);
+        width: 25px;
+        margin-top: 5px;
+    }
+
+    .side-bot a {
+        display: none;
+    }
+
+    .app-down {
+        content: url(../img/download.svg);
+        width: 15px;
+        border: none;
+    }
+
+    .user {
+        content: url(../img/profile.svg);
+        background-color: #717171;
+        border-radius: 50%;
+        width: 1.5rem;
+        padding: 0%;
+    }
+
+    /* footer */
+    footer {
+        padding: 0 5px;
+    }
+
+    .footer-L img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .txt-player {
+        margin-left: 5px;
+    }
+
+    .favorite {
+        margin-left: 0px;
+    }
+
+    .bar-player p {
+        margin: 0 5px;
+    }
 }
