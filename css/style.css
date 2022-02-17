@@ -90,22 +90,16 @@ main {
     padding: 10px;
 }
 
-.logo {
-    flex-shrink: 0;
-}
-
-
 .logo img {
     width: 130px;
+    flex-shrink: 1;
 }
-
-
 
 
 /* side top */
 .side-top{
-    flex-shrink: 0;
     display: block;
+    flex-shrink: 1;
 }
 
 .side-nav li {
@@ -131,8 +125,8 @@ main {
 /* side playlist */
 .side-playlist {
     margin-top: 30px;
-    overflow-y: auto;
     display: block;
+    flex-shrink: 1;
 }
 
 .name-playlist {
@@ -140,6 +134,10 @@ main {
     font-size: 16px;
     font-weight: 700;
 }
+
+.name-playlist {
+    height: 100%;
+  }
 
 #titoli {
     color: white;
@@ -334,6 +332,7 @@ footer {
     color: white;
     justify-content: space-between;
     padding: 0 10px;
+    z-index: 2;
 }
 
 
