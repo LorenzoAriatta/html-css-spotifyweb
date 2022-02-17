@@ -116,7 +116,7 @@ main {
 .side-nav a {
     text-decoration: none;
     color: #717171;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
 }
 
@@ -133,6 +133,12 @@ main {
     margin-top: 30px;
     overflow-y: auto;
     display: block;
+}
+
+.name-playlist {
+    overflow: auto;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 #titoli {
@@ -157,7 +163,7 @@ main {
     display: inline;
     font-weight: 700;
     color: #717171;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 /* side bot */
@@ -240,7 +246,7 @@ header {
 }
 
 .menu li {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
     list-style-type: none;
     display: inline-block;
@@ -253,7 +259,7 @@ header {
 
 #titolo-content {
     color: white;
-    margin: 40px 10px;
+    margin: 40px 20px;
 }
 
 #titolo-content p {
@@ -265,7 +271,6 @@ header {
 
 .row {
     justify-content: space-between;
-    padding-left: 10px;
 }
 
 .small-row {
@@ -367,6 +372,7 @@ footer {
 .footer-M {
     align-items: center;
 }
+
 .player {
     justify-content: center;
     align-items: center; 
@@ -407,10 +413,11 @@ footer {
 }
 
 .selector {
-    background-color: lightseagreen;
+    background-color: white;
     width: 15px;
     height: 15px;
     border-radius: 50%;
+    display: none;
 }
 
 
@@ -431,11 +438,21 @@ footer {
 }
 
 .volume-cntr {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     height: 100%;
     background-color: white;
     border-radius: 5px;
 }
 
+.selector-small {
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: none;
+}
 
 
 /* -------------------- HOVER -------------------- */
@@ -495,6 +512,18 @@ footer {
 
 .colored-bar:hover {
     background-color: #a5f22e;
+}
+
+.colored-bar:hover .selector {
+    display: block;
+}
+
+.volume-cntr:hover {
+    background-color: #a5f22e;
+}
+
+.volume-cntr:hover .selector-small {
+    display: block;
 }
 
 
