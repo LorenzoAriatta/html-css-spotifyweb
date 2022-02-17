@@ -142,14 +142,14 @@ main {
 }
 
 .add-playlist {
-    margin-top: 20px;
+    margin: 10px 0;
 }
 
 .add-playlist i {
     background-color: #a3a3a3;
     color: black;
-    border-radius: 5%;
-    padding: 5px 10px;
+    border-radius: 10%;
+    padding: 10px 10px;
     vertical-align: middle;
 }
 
@@ -209,7 +209,8 @@ header {
 }
 
 .button-upgrade {
-    padding: 35px;
+    margin: 20px;
+    padding: 20px;
 }
 
 .button-upgrade a {
@@ -285,6 +286,20 @@ header {
     width: calc(100% / 6 - 20px);
 }
 
+.play-album {
+    position: relative;
+    font-size: 60px;
+    color: white;
+}
+
+.play-album i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
 #titoli-covers {
     color: white;
     font-size: 20px;
@@ -298,8 +313,6 @@ header {
     margin-top: 10px;
     font-weight: 700;
 }
-
-
 
 
 
@@ -333,7 +346,8 @@ footer {
     margin-left: 20px;
 }
 
-.txt-player p {
+.txt-player a {
+    text-decoration: none;
     color: #a3a3a3;
     font-size: 12px;
     font-weight: 700;
@@ -380,14 +394,23 @@ footer {
 .bar {
     height: 5px;
     background-color: #717171;
-    border-radius: 15%;
+    border-radius: 5px;
 }
 
 .colored-bar {
     height: 100%;
     background-color: white;
-    border-radius: 15%;
+    border-radius: 5px;
+    justify-content: flex-end;
 }
+
+.selector {
+    background-color: #0896e7;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
 
 /* footer right */
 .footer-R {
@@ -402,17 +425,74 @@ footer {
 .volume-bar {
     height: 5px;
     background-color: #717171;
-    border-radius: 15%;
+    border-radius: 5px;
 }
 
 .volume-cntr {
     height: 100%;
     background-color: white;
-    border-radius: 15%;
+    border-radius: 5px;
 }
 
 
 /* -------------------- HOVER -------------------- */
+.button-upgrade:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.menu a:hover {
+    color: white;
+}
+
+.menu a:active {
+    border-bottom: 2px solid #a5f22e;
+}
+
+#covers:hover img {
+    filter: opacity(0.6);
+}
+
+#covers:hover i {
+    display: block;
+}
+
+.side-nav a:hover {
+    color: white;
+}
+
+.side-top li:active {
+    border-left: 2px solid #a5f22e;
+}
+
+.add-playlist i:hover {
+    background-color: white;
+}
+
+.add-playlist p:hover {
+    color: white;
+}
+
+.txt-player a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.heart i:hover {
+    color: white;
+}
+
+.player i:hover {
+    transform: scale(1.1);
+}
+
+.footer-R i:hover {
+    transform: scale(1.1);
+}
+
+.selector-play:hover {
+    display: block;
+}
 
 
 
